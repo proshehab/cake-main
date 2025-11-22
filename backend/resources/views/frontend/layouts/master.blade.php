@@ -16,16 +16,16 @@
         rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
-    <link rel="stylesheet" href="css/barfiller.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/flaticon.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/barfiller.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/magnific-popup.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/elegant-icons.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/nice-select.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/owl.carousel.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/slicknav.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{asset('frontend/css/style.css') }}" type="text/css">
 </head>
 
 <body>
@@ -39,16 +39,16 @@
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__cart">
             <div class="offcanvas__cart__links">
-                <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
-                <a href="#"><img src="img/icon/heart.png" alt=""></a>
+                <a href="#" class="search-switch"><img src="{{ asset('frontend') }}/img/icon/search.png" alt=""></a>
+                <a href="#"><img src="{{ asset('frontend') }}/img/icon/heart.png" alt=""></a>
             </div>
             <div class="offcanvas__cart__item">
-                <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+                <a href="#"><img src="{{ asset('frontend') }}/img/icon/cart.png" alt=""> <span>0</span></a>
                 <div class="cart__price">Cart: <span>$0.00</span></div>
             </div>
         </div>
         <div class="offcanvas__logo">
-            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+            <a href="./index.html"><img src="{{ asset('frontend') }}/img/logo.png" alt=""></a>
         </div>
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__option">
@@ -96,15 +96,17 @@
                                 </ul>
                             </div>
                             <div class="header__logo">
-                                <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                                <a href="./index.html"><img src="{{ asset('frontend') }}/img/logo.png" alt=""></a>
                             </div>
                             <div class="header__top__right">
                                 <div class="header__top__right__links">
-                                    <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
-                                    <a href="#"><img src="img/icon/heart.png" alt=""></a>
+                                    <a href="#" class="search-switch"><img
+                                            src="{{ asset('frontend') }}/img/icon/search.png" alt=""></a>
+                                    <a href="#"><img src="{{ asset('frontend') }}/img/icon/heart.png" alt=""></a>
                                 </div>
                                 <div class="header__top__right__cart">
-                                    <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+                                    <a href="#"><img src="{{ asset('frontend') }}/img/icon/cart.png" alt="">
+                                        <span>0</span></a>
                                     <div class="cart__price">Cart: <span>$0.00</span></div>
                                 </div>
                             </div>
@@ -145,7 +147,7 @@
     <!-- Hero Section Begin -->
     <section class="hero">
         <div class="hero__slider owl-carousel">
-            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+            <div class="hero__item set-bg" data-setbg="{{ asset('frontend') }}/img/hero/hero-1.jpg">
                 <div class="container">
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-8">
@@ -157,7 +159,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+            <div class="hero__item set-bg" data-setbg="{{ asset('frontend') }}/img/hero/hero-1.jpg">
                 <div class="container">
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-8">
@@ -270,7 +272,8 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/shop/product-1.jpg">
+                        <div class="product__item__pic set-bg"
+                            data-setbg="{{ asset('frontend') }}/img/shop/product-1.jpg">
                             <div class="product__label">
                                 <span>Cupcake</span>
                             </div>
@@ -286,7 +289,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/shop/product-2.jpg">
+                        <div class="product__item__pic set-bg"
+                            data-setbg="{{ asset('frontend') }}/img/shop/product-2.jpg">
                             <div class="product__label">
                                 <span>Cupcake</span>
                             </div>
@@ -302,7 +306,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/shop/product-3.jpg">
+                        <div class="product__item__pic set-bg"
+                            data-setbg="{{ asset('frontend') }}/img/shop/product-3.jpg">
                             <div class="product__label">
                                 <span>Cupcake</span>
                             </div>
@@ -318,7 +323,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/shop/product-4.jpg">
+                        <div class="product__item__pic set-bg"
+                            data-setbg="{{ asset('frontend') }}/img/shop/product-4.jpg">
                             <div class="product__label">
                                 <span>Cupcake</span>
                             </div>
@@ -334,7 +340,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/shop/product-5.jpg">
+                        <div class="product__item__pic set-bg"
+                            data-setbg="{{ asset('frontend') }}/img/shop/product-5.jpg">
                             <div class="product__label">
                                 <span>Cupcake</span>
                             </div>
@@ -350,7 +357,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/shop/product-6.jpg">
+                        <div class="product__item__pic set-bg"
+                            data-setbg="{{ asset('frontend') }}/img/shop/product-6.jpg">
                             <div class="product__label">
                                 <span>Cupcake</span>
                             </div>
@@ -366,7 +374,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/shop/product-7.jpg">
+                        <div class="product__item__pic set-bg"
+                            data-setbg="{{ asset('frontend') }}/img/shop/product-7.jpg">
                             <div class="product__label">
                                 <span>Cupcake</span>
                             </div>
@@ -382,7 +391,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/shop/product-8.jpg">
+                        <div class="product__item__pic set-bg"
+                            data-setbg="{{ asset('frontend') }}/img/shop/product-8.jpg">
                             <div class="product__label">
                                 <span>Cupcake</span>
                             </div>
@@ -451,7 +461,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
+                    <div class="team__item set-bg" data-setbg="{{ asset('frontend') }}/img/team/team-1.jpg">
                         <div class="team__item__text">
                             <h6>Randy Butler</h6>
                             <span>Decorater</span>
@@ -465,7 +475,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item set-bg" data-setbg="img/team/team-2.jpg">
+                    <div class="team__item set-bg" data-setbg="{{ asset('frontend') }}/img/team/team-2.jpg">
                         <div class="team__item__text">
                             <h6>Randy Butler</h6>
                             <span>Decorater</span>
@@ -479,7 +489,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item set-bg" data-setbg="img/team/team-3.jpg">
+                    <div class="team__item set-bg" data-setbg="{{ asset('frontend') }}/img/team/team-3.jpg">
                         <div class="team__item__text">
                             <h6>Randy Butler</h6>
                             <span>Decorater</span>
@@ -493,7 +503,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="team__item set-bg" data-setbg="img/team/team-4.jpg">
+                    <div class="team__item set-bg" data-setbg="{{ asset('frontend') }}/img/team/team-4.jpg">
                         <div class="team__item__text">
                             <h6>Randy Butler</h6>
                             <span>Decorater</span>
@@ -528,7 +538,7 @@
                         <div class="testimonial__item">
                             <div class="testimonial__author">
                                 <div class="testimonial__author__pic">
-                                    <img src="img/testimonial/ta-1.jpg" alt="">
+                                    <img src="{{ asset('frontend') }}/img/testimonial/ta-1.jpg" alt="">
                                 </div>
                                 <div class="testimonial__author__text">
                                     <h5>Kerry D.Silva</h5>
@@ -550,7 +560,7 @@
                         <div class="testimonial__item">
                             <div class="testimonial__author">
                                 <div class="testimonial__author__pic">
-                                    <img src="img/testimonial/ta-2.jpg" alt="">
+                                    <img src="{{ asset('frontend') }}/img/testimonial/ta-2.jpg" alt="">
                                 </div>
                                 <div class="testimonial__author__text">
                                     <h5>Kerry D.Silva</h5>
@@ -572,7 +582,7 @@
                         <div class="testimonial__item">
                             <div class="testimonial__author">
                                 <div class="testimonial__author__pic">
-                                    <img src="img/testimonial/ta-1.jpg" alt="">
+                                    <img src="{{ asset('frontend') }}/img/testimonial/ta-1.jpg" alt="">
                                 </div>
                                 <div class="testimonial__author__text">
                                     <h5>Ophelia Nunez</h5>
@@ -594,7 +604,7 @@
                         <div class="testimonial__item">
                             <div class="testimonial__author">
                                 <div class="testimonial__author__pic">
-                                    <img src="img/testimonial/ta-2.jpg" alt="">
+                                    <img src="{{ asset('frontend') }}/img/testimonial/ta-2.jpg" alt="">
                                 </div>
                                 <div class="testimonial__author__text">
                                     <h5>Kerry D.Silva</h5>
@@ -616,7 +626,7 @@
                         <div class="testimonial__item">
                             <div class="testimonial__author">
                                 <div class="testimonial__author__pic">
-                                    <img src="img/testimonial/ta-1.jpg" alt="">
+                                    <img src="{{ asset('frontend') }}/img/testimonial/ta-1.jpg" alt="">
                                 </div>
                                 <div class="testimonial__author__text">
                                     <h5>Ophelia Nunez</h5>
@@ -819,15 +829,15 @@
     <!-- Search End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.barfiller.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="{{ asset('frontend') }}/js/jquery-3.3.1.min.js"></script>
+    <script src="{{ asset('frontend') }}/js/bootstrap.min.js"></script>
+    <script src="{{ asset('frontend') }}/js/jquery.nice-select.min.js"></script>
+    <script src="{{ asset('frontend') }}/js/jquery.barfiller.js"></script>
+    <script src="{{ asset('frontend') }}/js/jquery.magnific-popup.min.js"></script>
+    <script src="{{ asset('frontend') }}/js/jquery.slicknav.js"></script>
+    <script src="{{ asset('frontend') }}/js/owl.carousel.min.js"></script>
+    <script src="{{ asset('frontend') }}/js/jquery.nicescroll.min.js"></script>
+    <script src="{{ asset('frontend') }}/js/main.js"></script>
 </body>
 
 </html>
